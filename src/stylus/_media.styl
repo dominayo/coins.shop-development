@@ -1,0 +1,1004 @@
+/*==========  Desktop First  ==========*/
+@media (max-height : 990px) 
+	.popup-close 
+		bottom auto
+		top 0
+		left calc(100% + 20px)
+
+@media (max-width : 1399px) 
+	.deals-table
+		// TABLE
+		.table-head
+			display none
+		.hide-td
+			display block
+		.table-row_mod 
+			padding 30px 7.5px 0
+			border-radius 15px
+			margin 0 0 30px
+			box-shadow 0 10px 40px rgba(0,0,0,0.05)
+			&:hover
+				margin 0 0 30px
+				padding 30px 7.5px 0
+		.table-row-inner
+			flex-wrap wrap
+			align-items flex-start
+			padding 0
+			&:last-child 
+				margin-bottom 0
+			.td
+				width calc(33.33% - 25px)
+				margin 0 12.5px 36px
+				padding 0
+			
+
+// /* Large Devices, Wide Screens */
+@media (max-width : 1200px) 
+	.window-open_design 
+		.barter-table 
+			.th, .td
+				&:nth-child(1)
+					width 27%
+				&:nth-child(4)
+					width 30%
+
+	.header-wrap 
+		justify-content space-between
+	.header-1 .site-theme, .header-1 .wiki-help, .header-1 .login-to, .header-2 .site-theme, .header-2 .wiki-help, .cash-down, .cash-down_mr
+		margin 0 auto
+	.logo 
+		margin-right 3%
+	.footer-wrap
+		justify-content space-between
+	.footer__column 
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3)
+			width calc(26% - 20px)
+			margin 0
+		&:nth-child(4) 
+			margin 0
+			width calc(22% - 20px)
+	.footer__text
+		max-width 238px
+	.barter-table
+		.th, .td 
+			&:nth-child(1)
+				width 22%
+			&:nth-child(2)
+				width 22%
+			&:nth-child(3)
+				width 21%
+			&:nth-child(5)
+				width 18%
+	.gateway-table
+		.th, .td 
+			&:nth-child(1)
+				width 8%
+			&:nth-child(2)
+				width 20%
+			&:nth-child(3)
+				width 40%
+			&:nth-child(4)
+				width 8%
+			&:nth-child(5)
+				width 24%
+
+	.detail__item 
+		width: calc(33.33% - 10px);
+	.refferrals-top 
+		display block
+		.refferrals-box
+			width auto
+			margin-bottom 20px
+			&:last-child 
+				margin-bottom 0
+	.refferrals-right
+		width calc(100% - 240px)
+	.balance-crypto__cont li
+		margin-bottom 10px	
+		&:last-child 
+			margin-bottom 0
+	.qr-left, .qr-block_info .qr-left, .qr-block_mod .qr-left
+		padding 40px
+	.qr-right, .qr-block_info .qr-right, .qr-block_mod .qr-right
+		padding 40px 
+	.qr-apps__item
+		flex-direction column
+	.qr-apps__pic
+		order -1
+		margin-bottom 30px
+	.qr-flex
+		display block
+	.qr-flex .qr-pic
+		margin-right 0
+		margin-bottom 30px
+	.dispute-controls
+		flex-wrap wrap
+	
+	.dispute-controls .btn-wrap
+		order 2
+		margin 20px auto 0
+	.dispute-member
+		width 45%
+	.dispute-loose-wrap
+		order 1
+		width 220px
+		margin-top 20px
+		margin-right auto
+		&_right 
+			order 3
+			margin-right 0
+			margin-left auto
+
+	.dispute-operations-table 
+		.td, .th 
+			&:nth-child(1)
+				width 7%
+			&:nth-child(2)
+				width 17%
+			&:nth-child(3)
+				width 30%
+			&:nth-child(4)
+				width 15%
+			&:nth-child(5)
+				width 31%
+				
+@media (max-width : 1024px)
+	.wrapper, .header .wrapper 
+		padding 0 30px
+	.footer .wrapper
+		padding 0 20px
+	.section-head 
+		padding 50px 0 41px
+	.section-pagination
+		padding 0 0 50px
+	.refferrals-table_2 .refferrals-td:nth-child(3)
+		width 18%
+	.refferrals-table_2 .refferrals-td:nth-child(2)
+		width 48.2%
+	.balance-crypto__input .balance-crypto__list
+		position static
+		padding-left 0
+		margin-top 10px
+		&:before	
+			display none
+	.balance-crypto__input .balance-crypto__item.active .balance-crypto__link
+		background-color $gray
+	.balance-crypto__input .balance-crypto__item.active .crypto-icon
+		background-color #fff
+	.balance-crypto__small-text.right
+		text-align left
+
+// /* Medium Devices, Desktops */
+@media (max-width : 991px) 
+	.window-open_design 
+		.table .table-row
+			box-shadow none
+			border 1px solid $gray
+		.barter-table 
+			.th, .td
+				&:nth-child(1),
+				&:nth-child(2), 
+				&:nth-child(3)
+					width calc(33.33% - 25px)
+				&:nth-child(4)
+					width calc(100% - 25px)
+					margin-bottom 0
+	h1
+		font-size 40px
+		line-height 50px
+	.menu 
+		display block
+		position fixed
+		top 0
+		left calc(100% + 100px)
+		width 100%
+		height 100%
+		z-index 999
+		padding 15vw 10vw 5vw
+		background-color #fff
+		overflow-y auto
+		overflow-x hidden
+		transition all .4s ease-out
+		&-hamburger
+			display block
+	.header-1 .site-theme, .header-1 .wiki-help,  .header-2 .site-theme, .header-2 .wiki-help, .cash-down, .cash-down_mr
+		margin 0 0 30px 0
+	.header-1 .login-to 
+		margin 0 0 15px 0
+	.header-1 .login-fast 
+		margin-right 0
+		margin-bottom 15px
+	.footer-wrap
+		flex-wrap wrap
+	.footer__column 
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4)
+			width calc(50% - 20px)	
+		&:nth-child(1)
+			order 3
+		&:nth-child(2)
+			margin-bottom 40px
+			order 1
+		&:nth-child(3)
+			order 2
+		&:nth-child(4)
+			order 4
+	.section-head h1
+		margin-bottom 24px
+	.section-head p
+		margin-bottom 31px
+	
+	.head-pic
+		width 45vw
+	.barter
+		flex-wrap wrap
+	.barter-wrap
+		margin-right 0
+		width 100%
+	
+	// TABLE
+	.table-head
+		display none
+	.hide-td
+		display block
+	.table 
+		.table-row
+			flex-wrap wrap
+			align-items flex-start
+			margin 0 0 30px
+			padding 30px 7.5px
+			box-shadow 0 10px 40px rgba(0,0,0,0.05)
+			border-radius 15px
+			&:hover
+				margin 0 0 30px
+				padding 30px 7.5px
+			&:last-child 
+				margin-bottom 0
+	.barter-table
+		.table-row
+			.td
+				width calc(25% - 25px)
+				margin 0 12.5px 36px
+				padding 0
+				&:nth-child(5)
+					width calc(100% - 25px)
+					margin 0 12.5px 
+		.btn
+			min-width 255px
+			margin 0 auto
+
+	.balance-table 
+		.table-row
+			&:not(.table-head)
+				padding: 30px 7.5px 0;
+				&:hover
+					margin 0 0 30px
+					padding 30px 7.5px 0
+			.td
+				width calc(50% - 25px)
+				margin 0 12.5px 30px
+				padding 0
+	
+	.history-table
+		.table-row
+			&:not(.table-head)
+				padding: 30px 7.5px 0;
+				&:hover
+					margin 0 0 30px
+					padding 30px 7.5px 0
+					&:last-child {
+						margin 0
+					}
+			.td
+				width calc(50% - 25px)
+				margin 0 12.5px 30px
+				padding 0
+				&:nth-child(4)
+					order 1
+					width calc(100% - 25px)
+		.status
+			.status-title 
+				padding-left 17px
+				&:before
+					right auto
+					left 0
+
+	.gateway-table
+		.table-row
+			&:not(.table-head)
+				padding: 30px 7.5px 0;
+				&:hover
+					margin 0 0 30px
+					padding 30px 7.5px 0
+			.td
+				width calc(33.33% - 25px)
+				margin 0 12.5px 30px
+				padding 0
+				&:nth-child(3)
+					order 1
+					width calc(50% - 25px)
+				&:nth-child(5)
+					order 2
+					width calc(50% - 25px)
+		.btn
+			margin-top 13px
+
+	.dispute-operations-table 
+		.table-row
+			&:not(.table-head)
+				padding: 30px 7.5px 0;
+				&:hover
+					margin 0 0 30px
+					padding 30px 7.5px 0
+			.td
+				width calc(33.33% - 25px)
+				margin 0 12.5px 30px
+				padding 0
+
+	body.night
+		.menu 
+			background-color #373744
+	.btn_meta 
+		min-width 165px
+	.profile-cont
+		left 70px
+	.advert-row 
+		display block
+	.section-advert .btn
+		display flex
+		justify-content center
+		margin 30px auto 0
+		max-width 315px
+	.advert__list
+		flex-wrap wrap
+	.detail__list 
+		flex-wrap wrap
+	.detail__item
+		width calc(50% - 20px)
+		&:nth-child(3) 
+			margin-top 40px
+			width 100% 
+	.cash-point-cont_4
+		right auto
+		left 0
+		&:before 
+			right: auto;
+			left: 80px;
+	.section-pagination_mod 
+		padding 0
+		.pag
+			padding 30px 0
+			&-center 
+				top 30px
+	.chart
+		height 255px
+	.refferrals-table__row_head
+		display none
+	.refferrals-hide
+		display block
+	.refferrals-table__row
+		flex-wrap wrap 
+		margin 0 -10px
+	.refferrals-table_1 .refferrals-table__row .refferrals-td
+		width calc(50% - 20px)
+		margin 0 10px 20px
+	.refferrals-table_2
+		.refferrals-table__row .refferrals-td
+			width calc(25% - 20px)
+			margin 0 10px 20px
+			&:nth-child(2)
+				order 1
+				width 100%
+				margin-bottom 0
+	.refferrals-box
+		.pag
+			&-right 
+				display none
+			&-center 
+				position static
+				transform translateX(0%)			
+	.refferrals-box__row
+		display block
+		margin-bottom 15px
+	.refferrals-box__row .refferrals-box__top
+		margin-bottom 20px
+	.convert-block
+		display inline-block
+		margin-top 20px
+	.section-balance 
+		h2
+			margin-bottom 20px
+	.history-row
+		&:not(.history-row_adapt)
+			display block
+			margin-bottom 20px
+			h2 
+				margin-bottom 20px
+		.btn 
+			margin-top 10px
+	.settings-row 
+		display block
+		margin-bottom 0
+		h2
+			margin-bottom 20px
+			padding-top 0
+			margin-right 0
+	.st-profile-wrap
+		display block
+	.st-profile-box
+		width auto
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0 
+		&:after
+			display none
+	.dispute-controls .btn-wrap
+		order 3
+		min-width 290px
+	.dispute-loose-wrap
+		width 40%
+		&_right
+			order 2
+			.dispute-loose
+				margin-left auto	
+	.dispute-loose
+		width 220px
+	.dispute-table
+		.table-row_mod .table-row-inner
+			align-items flex-start
+			flex-wrap wrap
+	.section-st-deposit .st-profile-box:nth-child(2)
+		padding-top 0
+	.section-st-deposit_img .st-profile-box:nth-child(2) 
+		width auto
+	.st-profile-pic
+		img 
+			margin 0 auto
+	body.change .favorite__item
+		padding 20px
+	.popup-close
+		left calc(100% + 10px)
+	.window-open_02
+		padding 20px
+	.popup-wrap-block
+		display block
+	.popup-exchange-block
+		width auto
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
+
+// /* Small Devices, Tablets */
+@media (max-width : 767px)
+	.window-open_design 
+		.barter-table 
+			.th, .td
+				&:nth-child(1),
+				&:nth-child(2)
+					width calc(50% - 25px)
+				&:nth-child(3)
+					width calc(100% - 25px)
+	.popup-design__top
+		flex-wrap wrap
+	.popup-design-box
+		&:nth-child(1), &:nth-child(2)
+			width 40%
+		&:nth-child(4)
+			width 20%
+		&:nth-child(3)
+			order 1
+			width 100%
+			margin-top 10px
+		.status-title
+			padding-left 10px
+			&:before 
+				left 0
+	.popup-close
+		width 30px
+		height 30px
+		left auto
+		right 10px
+		top 10px
+	.popup
+		padding 20px 40px
+	.window-open_02 h2
+		font-size 20px
+		line-height 25px
+		br
+			display none
+		
+		
+	.header-wrap
+		padding 22px 0
+	.menu
+		padding 20vw 10vw
+	.mob-show 
+		display block
+	.footer
+		padding 50px 0 60px
+	.footer-wrap
+		flex-direction row
+	.footer__column 
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4)
+			margin 0 0 30px 0
+			padding 0
+		&:nth-child(1)
+			margin-bottom 0
+			width 100%
+			order 4
+		&:nth-child(2)
+			width calc(50% - 10px)
+			order 2
+		&:nth-child(3)
+			width calc(50% - 10px)
+			order 3
+		&:nth-child(4)
+			width 100%
+			order 1
+	.footer__text
+		max-width 100%
+	.footer h6
+		margin-bottom 20px
+		padding-left 0
+	.footer__column .btn
+		display flex
+		min-width: 1px
+		max-width: 335px
+		margin 0 auto
+		height 60px
+	.points-main
+		font-size 15px
+	.footer p
+		font-size 13px
+		line-height 16px
+	.footer__text p
+		font-size 15px
+		line-height 20px
+	.footer__list_mb
+		margin-bottom 0
+	.footer__item 
+		margin-bottom 20px
+	.logo-hide
+		.logo	
+			display none
+	.hide-mob 
+		display none
+	.head-pic
+		position static
+		width auto
+		margin 0 auto
+		transform: translate(0)
+	.head-block
+		margin-bottom 40px
+		max-width 540px
+	.barter-table
+		.table-row
+			.td
+				width calc(50% - 25px)
+	
+	.deals-table
+		.table-row_mod 
+			.td
+				width calc(50% - 25px)
+		.td-inner_block 
+			display block
+			position relative
+		.status-down 
+			position absolute
+			left 0
+			bottom 15px
+		.status-chat 
+			margin 10px 0 0 20px
+		.status 
+			width auto
+	.gateway-table
+		.table-row	
+			.td
+				width calc(50% - 25px)
+				&:nth-child(5) 
+					width calc(100% - 25px)
+		.btn 
+			margin 0 auto
+			max-width 250px
+			flex-grow 1
+	
+	.dispute-table
+		.table-row_mod
+			.td
+				width calc(50% - 25px)
+				margin 0 12.5px 30px
+				&:nth-child(3), &:nth-child(4) 
+					margin-bottom 0
+					
+	.dispute-operations-table 
+		.table-row
+			.td
+				width calc(50% - 25px)
+		
+	.payment-pic 
+		flex-shrink 0
+		width 30px
+		height 30px
+		padding 5px
+	.course_decor:before
+		left -10px
+	.pag-count-row
+		margin-right 18px
+		font-size 13px
+		line-height 15px 
+		.br-mob
+			display block
+	.pag 
+		padding 30px 0 50px
+	.pag-right
+		display none
+	.pag-center
+		position static
+		transform translateX(0)
+	.pag-btn.prev
+		margin-right 3px
+	.pag-btn.next
+		margin-top 3px
+		margin-left -3px	
+	.select:after
+		right 12px
+	.barter-item_decor:before, .barter-item_decor:after
+		top 45px
+	.btn-main-row .btn
+		min-width 315px
+		justify-content center
+		span.icon-pluse 
+			margin-right 20px
+	.pag-list a
+		padding 7px 9px
+	.advert__link
+		padding 15px 20px
+		font-size 11px
+	.deals-wrap .select 
+		min-width 145px
+	.detail__list 
+		display block
+	.detail__item
+		width: auto
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+	.detail__item:nth-child(3)
+		width auto
+		margin-top 0
+	.refferrals-wrap
+		display block
+	.refferrals-left
+		width auto
+		margin-bottom 40px
+		padding-top 0
+	.refferrals-right
+		width auto
+	.nav-tab-list
+		flex-wrap wrap
+	.refferrals-box, .refferrals-bottom .refferrals-box 
+		padding 15px
+	.nav-tab-list__link
+		padding: 15px 30px;
+		font-size 11px
+	.convert-block	
+		padding: 15px 30px;
+		font-size 11px
+		span[class^="icon-"]
+			margin 0 6px
+			font-size 15px
+	.qr-block
+		display block
+	.qr-left, .qr-block_info .qr-left
+		width auto
+		padding 30px
+		&:after 
+			left 0%
+			top auto
+			bottom 0
+			height  1px
+			width 100%
+			margin-left 0
+	.qr-right, .qr-block_info .qr-right
+		padding 30px
+		width auto
+		h2
+			margin-bottom 30px
+	.varif-step
+		flex-shrink 0
+	.qr-block_mod .qr-left
+		width auto
+	.qr-block_mod .qr-right
+		width auto
+	.qr-apps__list 
+		display block
+	.qr-apps__item
+		width 260px
+		padding 30px
+		margin 0 auto 30px
+		&:last-child 
+			margin-bottom 0
+	.qr-text p
+		margin-bottom 15px
+		font-size 15px
+		line-height 20px
+		&:last-of-type
+			margin-bottom 30px
+		&:last-child 
+			margin-bottom 0
+	.refereeing__link
+		font-size 12px
+	.st-profile__item
+		width calc(50% - 20px)
+	.st-profile__achievements
+		padding 30px 30px 14px
+	.st-profile-percent small
+		font-size 14px
+	.st-profile-rating
+		padding 0 15px
+	body.change .favorite__item
+		width calc(50% - 30px)
+	.favorite__item
+		flex-wrap wrap
+	.favorite-box
+		padding-right 5px
+		.status
+			width auto
+			&-title 
+				position relative
+				padding-left 10px
+				&:before
+					left 0
+		.control__link
+			width 30px
+			height 30px
+			border-radius 8px
+			font-size 14px
+		&:nth-child(1), &:nth-child(2)
+			width 44%
+		&:nth-child(4)
+			width 12%
+		&:nth-child(3)
+			order 1
+			width 100%
+			margin-top 15px
+			padding-right 0
+	.window-open_create_1 
+		.refereeing__link
+			font-size 12px
+// /* Small Devices, Tablets */
+@media (max-width : 568px)
+	.window-open_design
+		padding 45px 20px
+		.table 
+			margin 0
+	.popup-design-box
+		&:nth-child(1), &:nth-child(4) 
+			width 50%	
+		&:nth-child(2)
+			order 1
+			width 100%
+		.control__link
+			width 30px
+			height 30px
+			font-size 12px
+			border-radius 8px
+	.window-open_design .st-profile__achievements
+		margin-bottom 35px
+		padding 25px 20px 0
+	.window-open_create
+		padding 40px 20px
+		.balance-crypto__input input
+			padding 15px
+	.popup
+		padding 20px
+	.popup-card
+		padding 20px
+	.popup-card__row input
+		padding 8px 5px 7px
+	.popup-card__input input
+		padding 12px 5px 12px
+	.popup-user__top
+		padding 20px 15px
+	.popup-comments
+		padding 20px 15px
+	.popup-user__cont
+		padding 15px
+	body.change .favorite__list
+		display block
+		margin 0
+	body.change .favorite__item
+		margin 0 0 30px
+		width auto
+		&:last-child 
+			margin-bottom 0
+
+	.footer-mob__top
+		.logo-pic 
+			width 30px
+			margin-right 12px
+		.footer-soc__item 
+			margin-right 4px
+			&:last-child 
+				margin-right 0
+		.footer-soc__link 
+			width 40px
+			height 40px
+	.footer__item
+		display block
+	.points-icon
+		margin-right 0
+		margin-bottom 6px
+	.section-head .btn
+		display flex
+		justify-content center
+		min-width: 1px
+		max-width: 315px
+		margin 0 auto
+		span.icon-pluse 
+			margin-right 20px
+	.head-btn
+		width 48px
+		height 35px
+		top 41%
+		font-size 15px
+		span 
+			padding-top 4px
+	.barter-item
+		width 130px
+	.barter .chek-block
+		margin-top 40px
+	.table
+		font-size 15px
+		line-height 20px
+	.table
+		margin 0 -15px
+	.status-title
+		font-size 15px
+		line-height 20px
+	.detail-progress__bottom
+		display block
+	.detail-progress__bottom-text 
+		margin-bottom 10px
+		padding-right 0
+	.detail-footer__data span:not([class^='icon'])
+		font-size 12px
+	.detail-footer
+		padding 0
+	.detail__item
+		padding 20px
+	.detail-bottom
+		margin 0 -20px
+	.cash-point-cont_4
+		min-width 265px
+	.refferrals-table_2 .refferrals-table__row .refferrals-td
+		width calc(50% - 20px)
+	.chart
+		height 200px
+	.refferrals-box
+		border-radius 10px
+	.refferrals-box .pag
+		justify-content center
+		&-left
+			display none
+	.mob-hyphen
+		display inline
+	.td-inner_mod
+		display block
+	.refereeing__link
+		padding 0 10px
+		font-size 9px
+	.dispute-loose-wrap
+		width 100%
+		&_right
+			order 3
+			.dispute-loose
+				justify-content flex-end
+	.dispute-loose
+		width 290px
+		
+	.dispute-controls .btn-wrap
+		order 4
+	.dispute-controls .btn
+		min-width 290px
+	.dispute-table 
+		.status-chat
+			margin-top 10px
+		.status-down
+			display inline-block
+		.detail-bottom
+			margin 0 -15px
+	.chat_dispute
+		padding 15px 15px 0
+	.chat_dispute .detail-chat
+		height 300px
+	.chat-attach
+		left 15px
+	.chat_dispute .chat-send
+		right 15px
+	.chat_dispute .chat-area
+		padding 0 70px 0 40px
+	.st-deposit-bottom
+		display block
+	.st-profile-btn_part
+		display block
+	.st-profile-btn_part .btn
+		width 260px
+		margin 0 auto 20px
+	.history-row_adapt
+		display block
+		margin-bottom 20px
+		h2 
+			margin-bottom 20px
+	.change-form__list
+		display inline-flex
+	.history-row .btn 
+		min-width 260px
+	.window-open_03 .popup-user__top
+		padding 40px 40px 25px
+	.window-open_03 .popup-user__cont
+		padding 25px 35px 40px
+
+// /* Small Devices, Tablets */
+@media (max-width : 374px)
+	.footer__column 	
+		&:nth-child(2), &:nth-child(3)
+			width 100%
+	.footer-mob__top
+		display block
+	.footer-mob__top .logo 
+		margin-bottom 30px
+	.footer-mob__top .footer-soc__item
+		margin-right 15px
+	.table 
+		.table-row
+			padding 20px 10px
+			&:hover
+				padding 20px 10px
+	.barter-table
+		.table-row
+			.td
+				width calc(50% - 20px)
+				margin 0 10px 30px
+				&:nth-child(5)
+					width calc(100% - 20px)
+					margin 0 10px 
+		.btn
+			min-width 200px
+	.barter-item
+		width calc(50% - 10px)
+		&:first-child
+			margin-right 20px
+	.barter-item_decor:before, .barter-item_decor:after
+		display none
+	.pag-count-row
+		margin-right 5px
+	.footer__item 
+		display flex
+	.points-icon 
+		margin-right 15px
+		margin-bottom 0
+	.user-percent
+		margin-right 5px
+	.status-text
+		font-size 11px
+	.btn-main-row .btn
+		min-width 260px
+	.detail-footer__data:last-child span[class^='icon']
+		font-size 14px
+	.detail-footer__data:first-child span[class^='icon']
+		font-size 12px
+	.detail-footer__data span:not([class^='icon'])
+		font-size 10px
+	.detail-footer__data span[class^='icon']
+		margin-right 7px
+
+/**/
+

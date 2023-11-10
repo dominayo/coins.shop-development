@@ -1,0 +1,15 @@
+version: '2.0'
+
+services:
+    backend:
+        build: docker/backend
+        links:
+            - mongo
+        volumes:
+            - ./backend:/backend:rw
+        command: sh -c 'cd /backend; npm install; npm run dev'
+        ports:
+            - 8090:8090
+
+    mongo:
+        image: mongo

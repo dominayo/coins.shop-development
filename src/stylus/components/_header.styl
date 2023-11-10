@@ -1,0 +1,549 @@
+.header {
+	background $white;
+	.wrapper {
+		max-width 1270px;
+		padding 0 50px 0 40px;
+	}
+	&-wrap {
+		display flex
+		align-items center
+		padding 29px 0;
+	}
+	&-1 {
+		.site-theme {
+			margin-right 90px
+		}
+		.wiki-help  {
+			margin-right auto
+		}
+		.login-to {
+			margin-right 26px
+		}
+		.login-fast {
+			margin-right 15px
+		}
+	}
+	&-2 {
+		.site-theme {
+			margin-right 99px
+		}
+		.wiki-help {
+			margin-right 92px
+		}
+	}
+}
+.logo {
+	margin-right: 63px;
+}
+// Radio buttons
+.site-theme {
+	position relative
+	display flex
+	align-items center
+	height 40px
+	width 72px	
+	border-radius: 100px;
+	background-color: $gray;
+	&__elem {
+		&_day {
+			.theme + label:before {
+				content '\e90e'
+				top: 11px;
+		    left: 13px;
+				color: #ffa233;
+			}
+			.theme + label:after {
+				top: 4px;
+				left: 4px;
+			}
+		}
+		&_night {
+			.theme + label:before {
+				content '\e905'
+				top: 11px;
+				left: 46px;
+				color: #9696b3;
+			}
+			.theme + label:after {
+				top: 4px;
+				right: 4px;
+			}
+		}
+	}
+}
+.theme {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.theme + label {
+	cursor: pointer;
+}
+.theme + label:before {
+	position: absolute;
+	z-index 1
+	font-size 14px
+	font-family 'icomoon';
+}
+.theme + label:after {
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	box-shadow: 0 5px 10px rgba(81, 81, 104, 0.15);
+	border-radius: 16px;
+	background-color: $white;
+	opacity: 0;
+	transition: $transition;
+}
+.theme:checked + label:after {
+	opacity: 1;
+}
+
+// Wiki
+.wiki {
+	&-link {
+		display block
+		span {
+			vertical-align middle
+		}
+	}
+	&-icon {
+		display inline-flex;
+		align-items center
+		justify-content center
+		margin-right 6px
+		vertical-align middle    
+		width: 20px;
+    height: 20px;
+		border-radius: 50%;
+		border: 1px solid $gray2;
+		color: $gray2;
+	}
+}
+
+.login {
+	&-to {
+		color: $gray2;
+	}
+}
+
+.cash {
+	&-down {
+		display flex
+		margin-right 70px
+		&_mr {
+			margin-right 0	
+		}
+		&_mod {
+			.cash-point-pic {
+				padding-top 0
+			}
+			.cash-point-cont li a {
+				align-items center
+			}
+			.cash-point-cont li {
+				margin-bottom 14px
+			}
+		}
+	}
+	&-text {
+		color $gray2;
+		margin-right 10px;
+	}
+	&-point {
+		position relative
+		&.active {
+			.cash-point-cont {
+				display block
+			}
+			.cash-point-title:after {
+				transform: rotate(180deg)
+			}
+		}
+		&-title {
+			position relative
+			display block
+			font-weight 500;
+			padding-right 10px;
+			&:after {
+				content '\e90b'
+				position absolute
+				right: 0;
+				top: 0px;
+				font-family 'icomoon'
+				font-size 5px
+				color $gray2
+			}
+		}
+		&-cont {
+			display none
+			position absolute
+			z-index 10
+			top calc(100% + 16px)
+			left 50%
+			transform translateX(-50%)
+			padding 30px
+			background-color #fff
+			box-shadow 0 0 40px rgba(27, 27, 30, 0.05), 0 40px 50px rgba(27, 27, 30, 0.15)
+			border-radius 25px
+			&:before {
+				content ''
+				position absolute
+				right 25%
+				bottom 100%
+				width: 0;
+				height: 0;
+				border-left: 7.5px solid transparent;
+				border-right: 7.5px solid transparent;
+				border-bottom: 10px solid #fff;
+			}
+			ul {
+				margin-bottom 22px
+			}
+			li {
+				margin-bottom 25px
+				&:last-child {
+					margin-bottom 0
+				}
+				a {
+					display flex
+					&:hover {
+						color $black2
+					}
+				}
+			}
+			.btn {
+				min-width: 1px;
+				display flex
+				&:hover {
+					color: #fff;
+					background-color $accent;
+				}
+			}
+			&_1 {
+				min-width 184px
+			}
+			&_2 {
+				left 54%
+				min-width 219px
+				padding: 23px 30px 30px;
+				&:before {
+					right 30%
+				}
+				ul {
+					margin-bottom 17px
+				}
+			}
+			&_3 {
+				top calc(100% + 2px)
+				left 28%
+				min-width 200px
+				padding: 15px 0px 20px;
+				&:before {
+					right 33%
+				}
+				ul {
+					margin-bottom 0
+				}
+				li {
+					padding 0
+					margin 0
+					&:last-child {
+						a {
+							border-bottom: none
+						}
+					}
+					a {
+						display block
+						font-weight: 500;
+						padding 10px 30px 
+						border-bottom 1px solid #EDEDF7
+					}
+				}
+			}
+			&_4 {
+				min-width: 384px
+				left auto
+				transform: translateX(0)
+				right 0
+				padding 30px
+				font-weight 500
+				&:before {
+					right 18%
+				}
+			}
+		}
+		&-pic {
+			padding-top 2px
+			margin-right 10px
+			font-size 11px
+			&_mod {
+				display flex
+				align-items center
+				justify-content center
+				width 26px
+				height 26px
+				border-radius 5px
+				background-color $gray
+				font-size 15px
+			}
+		}
+		&-price {
+			&__count {
+				font-weight: 500;
+				text-transform uppercase
+			}
+			&__time {
+				margin-top 5px
+				font-size 12px
+				line-height 15px
+				color $gray2
+			}
+		}
+	}
+}
+
+.profile {
+	&-block {
+		margin-left auto	
+		position relative
+		&.active {
+			.profile-cont {
+				display block
+			}
+			.profile-down {
+				transform: translate(-50%, -50%) rotate(-90deg);
+			}
+		}
+	}
+	&-inner {
+		display flex
+	}
+	&-cont {
+		display none
+		position absolute
+		min-width 190px	
+		z-index 10
+		top calc(100% + 16px)
+		left 54%
+		transform translateX(-50%)
+		padding 15px 30px 28px
+		background-color #fff
+		box-shadow 0 0 40px rgba(27, 27, 30, 0.05), 0 40px 50px rgba(27, 27, 30, 0.15)
+		border-radius 25px
+		&:before {
+			content ''
+			position absolute
+			right 19%
+			bottom 100%
+			width: 0;
+			height: 0;
+			border-left: 7.5px solid transparent;
+			border-right: 7.5px solid transparent;
+			border-bottom: 10px solid #fff;
+		}
+	}
+	&-varif {
+		position relative
+		margin 0 -15px 14px
+		padding 12px 25px 13px 15px
+		border-radius 10px
+		background-color #dbffe7
+		color $accent
+		font-size 12px
+		font-weight 500
+		line-height 15px
+		.close-varif {
+			position absolute
+			display block
+			right: 6px;
+			top: 3px;
+			font-size: 8px;
+			span:before {
+				color $accent
+				transition $transition
+			}
+			&:hover {
+				span:before {
+					color: $text-color;
+				}	
+			}
+		}
+	}
+	&-user {
+		&__list {
+			margin-bottom 35px
+		}
+		&__item {
+			margin-bottom 18px
+			&:last-child {
+				margin-bottom 0
+			}
+			&.message {
+				.profile-user__link {
+					span {
+						position relative
+						&:after {
+							content ''
+							position absolute    
+							left: calc(100% + 5px);
+							top: 5px;
+							width 3px
+							height 3px
+							background-color #ff914c
+							border-radius 50%
+						}
+					}
+				}
+			}
+		}
+		&__link {
+			display block
+			font-weight 500
+			line-height 18px
+			&:hover {
+				color $accent
+			}
+		}
+		&__out {
+			display block
+			font-weight 500
+			line-height 18px
+			color $gray2
+			span {
+				display inline-block
+				vertical-align middle
+				&:before {
+					color $gray2
+					transition: $transition;
+				}
+			}
+			[class^='icon-'] {
+				padding-top 2px
+				font-size: 18px;
+				margin-right: 10px;
+			}
+			&:hover {
+				color: $text-color;
+				span:before {
+					color: $text-color;
+				}	
+			}
+		}
+	}
+	&-info {
+		padding-top 7px
+		margin-right 14px
+	}
+	&-text {
+		margin-bottom 5px
+		font-size: 12px;
+		line-height: 13px;
+		font-weight: 500;
+		color: $gray2
+	}
+	&-name {
+		color $black2;
+	}
+	&-avatar {
+		display flex;
+	}
+	&-pic {
+		height 50px;
+		width 50px;
+		border-radius: 15px 0 0 15px;
+		overflow: hidden;
+		img {
+			display block
+			width 100%;
+			height 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	&-drop {
+		position relative
+		width 26px
+		border-radius: 0 10px 10px 0;
+		border: 1px solid $gray3;
+		border-left: none;
+	}
+	&-down {
+		position absolute
+		top: 50%;
+		left 50%;
+		display flex
+		align-items center
+		justify-content center
+		transform: translate(-50%, -50%) rotate(90deg);
+		font-size 10px
+		span:before {
+			color: $gray2;
+			transition: $transition;
+		}
+	}
+}
+.menu {
+	display flex
+	align-items center
+	flex-grow: 1
+	&-close {
+		display none
+		position absolute
+		top 20px
+		right 20px
+		font-size 20px
+		padding 10px
+		span:before {
+			transition $transition
+		}
+		&:hover {
+			span:before {
+				color: $accent
+			}
+		}
+	}
+	&-hamburger {
+		display none
+		position relative
+		z-index 999
+		width 20px
+		height 16px
+		span {
+			position absolute
+			height 2px
+			border-radius: 15px
+			background-color $gray2
+			transition all .3s ease-in-out
+			will-change: transform
+			&:nth-child(1) {
+				width 100%
+				left 0
+				top 0
+			}
+			&:nth-child(2) {
+				width 70%
+				left 50%
+				top 50%
+				margin-left -7px
+				margin-top -1px
+			}
+			&:nth-child(3) {
+				width 100%
+				left 0
+				top calc(100% - 2px)
+			}
+		}
+	}
+}
+.metamask {
+	display inline-flex
+	position relative
+	&.active {
+		.cash-point-cont {
+			display block
+		}
+	}
+}

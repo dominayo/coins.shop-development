@@ -1,0 +1,593 @@
+
+.popup {
+
+	&.active {
+		position: fixed
+		left: 0
+		top: 0
+		height: 100%
+		overflow: auto
+		width: 100%
+		opacity: 1
+		background-color: rgba(81, 81, 104, 0.3)
+	}
+
+	&-close {
+		position: absolute
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 11px
+		width: 41px
+		height: 41px
+		left: 100%
+		bottom: 100%
+		background-color: #fff
+		border-radius: 50%
+
+		span:before {
+			transition: $transition
+		}
+
+		&:hover {
+			span:before {
+				color: $accent
+			}
+		}
+	}
+}
+
+.window-open {
+	position: relative
+	flex-grow: 1
+	margin: 0 auto
+	background: #ffffff
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05)
+	border-radius: 25px
+	text-align: left
+
+	&-cont {
+		// overflow hidden
+	}
+
+	&_02 {
+		padding: 45px 65px
+		max-width: 795px
+
+		h2 {
+			margin-bottom: 35px
+			line-height: 40px
+		}
+	}
+
+	&_03 {
+		padding: 0
+		max-width: 362px
+
+		.popup-user__top {
+			padding: 45px 55px 25px
+		}
+
+		.popup-user__cont {
+			padding: 25px 55px 40px
+		}
+
+		.popup-user__list {
+			margin-bottom: 32px
+		}
+
+		.popup-user {
+			margin-bottom: 0
+		}
+
+		.user-name {
+			font-size: 17px
+			line-height: 25px
+		}
+
+		.popup-user__blocking-text {
+			font-size: 12px
+			line-height: 15px
+		}
+	}
+
+	&_create {
+		padding: 45px 60px
+
+		p {
+			margin-bottom: 25px
+
+			&:last-of-type {
+				margin-bottom: 0
+			}
+		}
+
+		.popup-text {
+			margin-bottom: 35px
+
+			&_mod {
+				min-height: 275px
+			}
+		}
+
+		h2 {
+			line-height: 1.35
+		}
+
+		.refereeing__link {
+			text-transform: initial
+		}
+
+		.balance-crypto__input .crypto-icon {
+			background-color: #fff
+		}
+
+		.refereeing__item.active .balance-crypto__input .crypto-icon {
+			background-color: $gray
+		}
+
+		.select {
+			// padding 0 55px 0 30px
+			&:after {
+				right: 30px
+			}
+		}
+
+		.select-hide li {
+			// padding: 15px 30px 15px 30px;
+		}
+
+		.balance-crypto__input {
+			input {
+				padding: 15px 30px
+			}
+		}
+
+		.refereeing__item.active .crypto-icon {
+			background-color: $gray
+		}
+
+		&_1 {
+			max-width: 430px
+
+			h2 {
+				margin-bottom: 35px
+			}
+		}
+
+		&_2 {
+			max-width: 340px
+
+			h2 {
+				margin-bottom: 25px
+			}
+		}
+
+		&_3 {
+			max-width: 430px
+
+			h2 {
+				margin-bottom: 25px
+			}
+
+			p {
+				color: $gray2
+				min-height: 275px
+			}
+		}
+	}
+
+	&_service {
+		max-width: 440px
+		width: auto
+		padding: 17px 20px 16px 10px
+
+		.balance-crypto__check {
+			margin-bottom: 0
+
+			.checkbox + label {
+				cursor: default
+				padding: 7px 0 6px 43px
+				font-size: 13px
+				font-weight: 700
+				letter-spacing: 1px
+				text-transform: uppercase
+			}
+
+			.checkbox + label:before {
+				left: 0
+				top: 3px
+				border-radius: 5px
+			}
+
+			.checkbox + label:after {
+				top: 8px
+				left: 8px
+			}
+		}
+	}
+
+	&_design {
+		max-width: 780px
+		padding: 45px 60px
+
+		h3 {
+			margin-bottom: 30px
+		}
+
+		.st-profile__count {
+			font-size: 15px
+			line-height: 20px
+			font-weight: 700
+		}
+
+		.st-profile__text {
+			br {
+				display: none
+			}
+		}
+
+		.st-profile__achievements {
+			margin-bottom: 50px
+			padding: 25px 30px 0
+		}
+
+		.user-name {
+			font-size: 20px
+			line-height: 30px
+			margin-bottom: 0
+			font-weight: 500
+		}
+
+		.control__link {
+			margin-left: auto
+		}
+
+		.st-deposit-progress, .status-title {
+			margin-bottom: 0
+		}
+
+		.st-profile__item {
+			margin: 0 10px 29px
+		}
+
+		.table-row:not(.table-head):hover, .table-row:not(.table-head).active {
+			box-shadow: none
+		}
+	}
+}
+
+.popup {
+	&-design {
+		&__top {
+			display: flex
+			align-items: center
+			margin-bottom: 30px
+		}
+
+		&-box {
+			&:nth-child(1) {
+				width: 25%
+			}
+
+			&:nth-child(2) {
+				width: 12%
+			}
+
+			&:nth-child(3) {
+				width: 51%
+			}
+
+			&:nth-child(4) {
+				width: 12%
+			}
+		}
+	}
+
+	&-text {
+		color: $gray2
+		line-height: 20px
+	}
+
+	&-exchange {
+		&-block {
+			width: calc(50% - 22.5px)
+		}
+
+		&-decor {
+			border-radius: 15px
+			border: 1px solid #e9e9f2
+		}
+	}
+
+	&-course {
+		display: flex
+		margin-bottom: 20px
+		padding: 20px 25px
+
+		&__icon {
+			margin-right: 15px
+			font-size: 17px
+		}
+
+		&__info {
+			.popup-text {
+				margin-bottom: 9px
+			}
+		}
+
+		&__number {
+			text-transform: uppercase
+		}
+	}
+
+	&-changing {
+		margin-bottom: 24px
+
+		.popup-text {
+			margin-bottom: 10px
+		}
+
+		&__input {
+			position: relative
+
+			input {
+				width: 100%
+				padding: 15px 55px 15px 25px
+				border-radius: 15px
+				background-color: $gray
+				border: none
+				color: $black2
+				font-size: 15px
+				line-height: 20px
+				font-family: $default-fonts
+				transition: $transition
+
+				&:hover {
+					background-color: $gray3
+				}
+			}
+		}
+
+		&__icon {
+			position: absolute
+			right: 7px
+			top: 50%
+			transform: translateY(-50%)
+			width: 36px
+			height: 36px
+			box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05)
+			border-radius: 10px
+
+			&_btc {
+				background: #ffffff url('../img/icons/bitcoin.svg') center no-repeat
+			}
+
+			&_eth {
+				background: #ffffff url('../img/icons/ethereum.svg') center no-repeat
+			}
+
+			&_sberbank {
+				background: #ffffff url('../img/icons/sberbank.svg') center no-repeat
+			}
+
+			&_qiwi {
+				background: #ffffff url('../img/icons/qiwi.svg') center no-repeat
+				background-size: contain
+			}
+
+			&_yandex {
+				background: #ffffff url('../img/icons/yandex_money.svg') center no-repeat
+				background-size: contain
+			}
+		}
+
+		&__small {
+			margin-top: 5px
+			color: $gray2
+			font-size: 12px
+			line-height: 15px
+			text-align: right
+		}
+
+		&__wrap {
+			&:not(:last-child) {
+				margin-bottom: 4px
+			}
+		}
+	}
+
+	&-card {
+		margin-bottom: 25px
+		padding: 25px 30px
+		border-radius: 20px
+		background: url('../img/main/popup-card.jpg') center no-repeat
+		background-size: cover
+
+		input {
+			border-radius: 10px
+			line-height: 25px
+			background-color: #fff
+			border: none
+			transition: $transition
+		}
+
+		&__text {
+			margin-bottom: 10px
+			color: $gray2
+			font-size: 12px
+			line-height: 15px
+		}
+
+		&__row {
+			margin-bottom: 15px
+			display: flex
+			justify-content: space-between
+
+			input {
+				width: calc(25% - 5px)
+				padding: 8px 10px 7px
+
+				&:hover {
+					background-color: $gray
+				}
+			}
+
+			&_mod {
+				margin-bottom: 40px
+				justify-content: flex-start
+				align-items: center
+
+				.popup-card__text {
+					margin-bottom: 0
+					color: $text-color
+				}
+			}
+		}
+
+		&__input {
+			input {
+				width: 100%
+				padding: 12px 25px 13px
+
+				&:hover {
+					background-color: $gray
+				}
+			}
+		}
+
+		&__icon {
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 15px
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			background-color: #fff
+			font-size: 24px
+
+			span {
+				&[class^='icon-'] {
+					&:before {
+						color: #FF9700
+					}
+				}
+			}
+		}
+	}
+
+	&-btn {
+		.btn {
+			margin-bottom: 10px
+			min-width: 1px
+			display: flex
+		}
+
+		&__text {
+			text-align: center
+			color: $gray2
+			font-size: 12px
+			line-height: 15px
+		}
+	}
+
+	&-user {
+		margin-bottom: 25px
+
+		&__top {
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 25px 30px
+			border-bottom: 1px solid $gray3
+		}
+
+		&__cont {
+			padding: 25px 30px
+		}
+
+		&__ach {
+			margin-bottom: 5px
+			font-size: 17px
+			line-height: 25px
+			font-weight: 500
+		}
+
+		&__list {
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -16px 27px
+
+			li {
+				width: calc(50% - 32px)
+				margin: 0 16px 20px
+
+				&:nth-last-child(1), &:nth-last-child(2) {
+					margin-bottom: 0
+				}
+			}
+		}
+
+		&__blocking {
+			display: flex
+			align-items: center
+
+			&:hover {
+				color: $black2
+
+				span:before {
+					color: $black2
+				}
+			}
+
+			.popup-user__icon {
+				margin-right: 7px
+				font-size: 16px
+			}
+
+			&_active {
+				color: #ff7f7f
+			}
+		}
+
+		&__favorite {
+			font-size: 19px
+		}
+
+		&__icon {
+			span:before {
+				transition: $transition
+			}
+		}
+	}
+
+	&-comments {
+		padding: 25px 30px
+
+		&__quote {
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+			font-size: 17px
+			line-height: 25px
+			font-weight: 500
+		}
+
+		&__icon {
+			margin-right: 10px
+			font-size: 17px
+		}
+
+		&__text {
+			p:not(:last-child) {
+				margin-bottom: 20px
+			}
+		}
+	}
+}
+
+.popup-wrap-block {
+	display: flex
+	justify-content: space-between
+}

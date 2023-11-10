@@ -1,0 +1,248 @@
+#app {
+	&.night {
+		background-color #2a2a2f
+
+		.window-open, header {
+			background-color #2a2a2f
+		}
+
+		h2, h1, .logo-text__title, .advert__item.active .advert__link, .pag-more-link span, .profile-name, .balance-crypto__check .checkbox + label:after, .dispute-member div {
+			color #fff
+		}
+
+		.advert__link, .refferrals-soc__list a span:before, .nav-tab-list__link, .balance-crypto__cont li div:last-child, .balance-crypto__link div:not(.crypto-icon), .cash-point-price__count, .profile-user__link, .advert__item_drop .advert__link:hover span:before, .st-deposit-bottom span, 
+			.detail-table__row:not(.detail-table__row_head), .chat-area input, .cash-point-title, .popup-course__number, .popup-user__ach, .popup-user__favorite span:before, .popup-user__blocking .popup-user__icon span:before, .popup-user__blocking, .popup-comments, .popup-comments p  {
+			color #E9E9F2
+		}
+
+		.advert__link, .nav-tab-list__link {
+			&:hover {
+				color darken(#E9E9F2, 10%)
+			}
+		}
+
+		.detail__item, .balance-crypto__input .balance-crypto__item.active .balance-crypto__link, .chat_dispute {
+			background  #2a2a2f
+		}
+
+		.site-theme, footer, .user-percent__bg {
+			background-color #1b1b1e
+		}
+	
+		.site-theme__elem_night .theme + label:before {
+			color: #1b1b1e;	
+		}
+
+		.wiki-link, .checkbox + label {
+			color: #e9e9f2;
+		}
+
+		.section-head {	
+			background: url(../img/main/index-head-bg-night.jpg) center no-repeat;
+			background-size cover
+		}
+		.head {
+			&-pic {
+				&_day {
+					display none
+				}
+				&_night {
+					display block
+				}
+			}	
+		}
+		
+		.select {	
+			background-color #373744
+			color: #fff;
+		}
+		.custome-select.active .select {
+			color: $text-color;
+		}
+		.checkbox + label:before {
+			background-color #373744
+		}
+		.barter-item_decor:before, .barter-item_decor:after {
+			color $text-color	
+		}
+		.checkbox:checked + label:before {
+			background-color: $accent;
+		}
+		.user-name, .course, 	.payment-name, .limits, .status, .deals-time, .crypto, .history-code, .type, .balance, .balance-available, .balance-deal, .deals-operation__title, h3, .status-text small, .refferrals-data, .refferrals-stats__text, .alphabet-counts div, .td-inner {
+			color: #d5d5e5;
+	  }
+		.btn_border {
+			background-color transparent
+		}
+		.table-row:not(.table-head), .table-row_mod {
+			border-top-color: #373744;
+			&:hover, &.active {
+				box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+				background-color: #35353d;
+				.user-name, .course, 	.payment-name, .limits, .deals-time, .deals-operation__title, .status-title, .detail-text, .crypto, .history-code, .type, .balance, .balance-available, .balance-deal, .deals-operation__title, .status-text small, .status-down span:before, .td-inner {
+					color: #fff;
+				}
+			}
+		}
+		.pag-more-link:hover {
+			span {
+				color: $accent;
+			}
+		}
+		.pag-list li.active a {
+			color: #fff;
+			background-color #373744;
+			&:hover {
+				color: #fff;
+				background-color lighten(#373744, 10%);
+			}
+		}
+		.pag-list li a {
+			color: $gray2;
+			&:hover {
+				color: $accent;
+			}
+		}
+		.pag-btn {
+			&:hover {
+				span:before {
+					color: $accent;
+				}
+			}
+		}
+		.points-main {
+			color: #fff;
+			a {
+				color: #fff;
+				&:hover {
+					color: $accent;
+				}
+			}
+		}
+		.footer-soc__link {
+			&:hover {
+				box-shadow: 0 4px 10px rgba($accent, .7);
+			}
+		}
+		.section-advert {
+			background-color #1B1B1E;
+		}
+		.advert__item.active .advert__link {
+			background: #35353D;
+			box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+		}
+		.section-qr {
+			border-color: #1B1B1E;
+		}
+		.convert-block, .refferrals-link, .refferrals-soc__list a {
+			background: #35353D;
+			color: #E9E9F2;
+			box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+		}
+		.refferrals-link:hover {
+			box-shadow: 0 10px 25px rgba(24,187,80,0.2)
+		}
+
+		.refferrals-soc__list a:hover {
+			box-shadow: 0 10px 25px rgba(24,187,80,0.2)
+			span:before {
+				color $accent
+			}
+		}
+		.qr-right {
+			background url(../img/main/qr-bg-night.jpg) center no-repeat;
+			background-size cover
+		}
+		.qr-left:after {
+			background-color #1B1B1E;
+		}
+		.nav-tab-list__item.active .nav-tab-list__link {
+			color: #E9E9F2;
+			background-color #373744;
+		}
+		.balance-crypto__input input {
+			background-color #35353D;
+			color: #fff;
+		}
+		.balance-crypto__item.active .balance-crypto__link {
+			background-color #35353D;
+		}
+		.qr-apps__text {
+			color $gray
+		}
+		.qr-apps__pic img {
+			box-shadow: 0 23px 91px $black;
+		}
+		.qr-block_mod .qr-right {
+			background none
+		}
+		.cash-point-cont, .profile-cont {
+			background-color #35353D
+		}
+		.cash-point-cont:before, .profile-cont:before {
+			border-bottom-color: #35353D
+		}
+		.refferrals-box {
+			background #35353D
+		}
+	
+		.favorite__item {
+			border-color: #35353D
+		}
+		.st-deposit-progress, .change-form__list {
+			background-color #35353D
+		}
+		.popup.active {
+			background-color: rgba(81,81,104,0.9);
+		}
+		.popup-changing__input input, .popup-card input {
+			background-color #35353D
+			color #E9E9F2
+		}
+		.popup-close {
+			background-color #35353D
+			span:before {
+				color #fff
+			}
+			&:hover {
+				span:before {
+					color $accent
+				}
+			}
+		}
+		.popup {
+			.st-profile-refereeing {
+				background-color #35353D
+			}
+			.refereeing__link {
+				color #E9E9F2
+			}
+			.refereeing__item.active .refereeing__link {
+				color #35353D	
+			}
+			
+		}
+		.balance-crypto__radio label .text-1 {
+			color #fff
+			opacity 1
+		}
+		.balance-crypto__radio label .text-2 {
+			opacity 1
+			color #E9E9F2
+		}
+		.balance-crypto__radio.disabled {
+			opacity .5
+		}
+		.window-open_create p {
+			color #E9E9F2
+		}
+		.window-open_design {
+			.st-profile__achievements {
+				background #35353D
+			}
+			.st-profile__count {
+				color #E9E9F2
+			}
+		}
+	}
+}
